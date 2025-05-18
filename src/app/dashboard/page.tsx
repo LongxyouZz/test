@@ -88,6 +88,8 @@ export default async function Dashboard() {
                   </div>
                 )}
               </section>
+
+              {!hasAdminAccess && <SetupAdmin userId={user.id} />}
             </TabsContent>
 
             {hasAdminAccess && (
